@@ -1,0 +1,5 @@
+system	CPU_socket	Cores	theads	GHz	Memtotal(GB)	diskspace(TB)	disktype
+S1	2		20	40	2.80	132				6/9 disk software raid0
+S2	2		24	48	2.50	132		14 		6 disk hardware raid5
+S3	1		8	16	2.00	66		1.8		single disk
+S4	2		20	40	3.10	132		7.3		6 disk software raid0

@@ -1,0 +1,11 @@
+0.0	Demultiplexing
+1286.1	Generating_FASTQ_files
+3574.3	Alignment
+382.4	Detect_SV
+1326.3	Variant_analysis
+768.0	Variant_annotation
+996.5	Detect_CNV
+22.4	SV_annotation
+161.9	ROH_detection
+1239.7	Statistics_evaluation
+1.5	Report_generation

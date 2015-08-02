@@ -1,0 +1,107 @@
+ls
+cpu
+2x Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+
+12 cores per processor
+
+2  theds per core
+e.g.
+
+processor       : 47
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 63
+model name      : Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+stepping        : 2
+microcode       : 0x2d
+cpu MHz         : 1201.562
+cache size      : 30720 KB
+physical id     : 1
+siblings        : 24
+core id         : 13
+cpu cores       : 12
+apicid          : 59
+initial apicid  : 59
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 15
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips        : 4993.98
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 46 bits physical, 48 bits virtual
+power management:
+
+[sbsuser@localhost proc]$ lscpu
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                48
+On-line CPU(s) list:   0-47
+Thread(s) per core:    2
+Core(s) per socket:    12
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 63
+Model name:            Intel(R) Xeon(R) CPU E5-2680 v3 @ 2.50GHz
+Stepping:              2
+CPU MHz:               1200.976
+BogoMIPS:              4993.98
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              30720K
+NUMA node0 CPU(s):     0-11,24-35
+NUMA node1 CPU(s):     12-23,36-47
+
+MEM
+MemTotal:       131754524 kB
+
+              total        used        free      shared  buff/cache   available
+Mem:         128666        1033         414          23      127218      126951
+Swap:          4095          85        4010
+
+disk
+
+
+major minor  #blocks  name
+
+  8        0 2929721344 sda
+  8        1       1024 sda1
+  8        2     512000 sda2
+  8        3 2929206272 sda3
+  8       16 14648606720 sdb
+  8       17 14648604672 sdb1
+253        0    4194304 dm-0
+253        1   52428800 dm-1
+253        2 2872520704 dm-2
+		     
+		     
+
+Filesystem                 Size  Used Avail Use% Mounted on
+/dev/mapper/centos00-root   50G  1.8G   49G   4% /
+devtmpfs                    63G     0   63G   0% /dev
+tmpfs                       63G     0   63G   0% /dev/shm
+tmpfs                       63G   50M   63G   1% /run
+tmpfs                       63G     0   63G   0% /sys/fs/cgroup
+/dev/sda2                  497M  144M  353M  29% /boot
+/dev/mapper/centos00-home  2.7T   21G  2.7T   1% /home
+/dev/sdb1                   14T  834G   13T   6% /mnt
+
+04:00.0 RAID bus controller: LSI Logic / Symbios Logic MegaRAID SAS 2208 [Thunderbolt] (rev 05)
+        Subsystem: LSI Logic / Symbios Logic MegaRAID SAS 9271-8i
+        Physical Slot: 261
+        Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+
+        Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+        Latency: 0
+        Interrupt: pin A routed to IRQ 40
+        Region 0: I/O ports at 2000 [size=256]
+        Region 1: Memory at 91940000 (64-bit, non-prefetchable) [size=16K]
+        Region 3: Memory at 91900000 (64-bit, non-prefetchable) [size=256K]
+        Expansion ROM at 91c00000 [disabled] [size=128K]
+        Capabilities: <access denied>
+        Kernel driver in use: megaraid_sas

@@ -1,0 +1,14 @@
+S1.1 = 10.46.32.224 with 6 scratch disks
+S1.2 = 10.46.32.224 with 9 scratch disks 
+S2 = 10.46.30.46
+S3 = 10.46.30.52
+S4 = 10.46.30.55
+
+W1.1= 2.5.55.1311.HAS fastq TN SampleSheetHAS
+W1.2= 2.5.55.1311.HAS align TN SampleSheetHAS
+W2 = 2.5.55.16.NorthStar R SampleSheetNorthStar
+W3 = 2.6.17.5.NorthStar R SampleSheetNorthStar
+W4 = 2.5.55.16.NorthStar TN SampleSheetNorthStar2
+W5.1 = 2.5.55.1311.HAS fastq R SampleSheetHAS2
+W5.2 = 2.5.55.1311.HAS align R SampleSheetHAS2
+W6 = 2.6.17.5.NorthStar TN SampleSheetNorthStar

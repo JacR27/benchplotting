@@ -1,0 +1,100 @@
+cpu
+2x Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+
+10 cores per processor
+
+2 therds per core
+
+e.g
+processor       : 39
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 62
+model name      : Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+stepping        : 4
+microcode       : 0x428
+cpu MHz         : 2801.531
+cache size      : 25600 KB
+physical id     : 1
+siblings        : 20
+core id         : 12
+cpu cores       : 10
+apicid          : 57
+initial apicid  : 57
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 13
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi                           mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good n                          opl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx                          16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida                           arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips        : 5605.24
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 46 bits physical, 48 bits virtual
+power management:
+
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                40
+On-line CPU(s) list:   0-39
+Thread(s) per core:    2
+Core(s) per socket:    10
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 62
+Model name:            Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+Stepping:              4
+CPU MHz:               2801.640
+BogoMIPS:              5605.24
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              25600K
+NUMA node0 CPU(s):     0-9,20-29
+NUMA node1 CPU(s):     10-19,30-39
+
+MEM
+MemTotal:       131804000 kB
+
+              total        used        free      shared  buff/cache   available
+Mem:         128714       12809       95679          24       20225      115411
+Swap:             0           0           0
+
+
+disk
+
+major minor  #blocks  name
+
+  8        0  976762584 sda
+  8       32  976762584 sdc
+  8       16  976762584 sdb
+  8       48  976762584 sdd
+  8       64  976762584 sde
+  8       80  976762584 sdf
+  8      128  976762584 sdi
+  8       96  976762584 sdg
+  8      112  976762584 sdh
+  8      144  976762584 sdj
+  8      160  195360984 sdk
+  8      161     512000 sdk1
+  8      162  194847744 sdk2
+  8      176  195360984 sdl
+  8      177  195359744 sdl1
+253        0    4194304 dm-0
+253        1   52428800 dm-1
+253        2  138223616 dm-2
+  9        1 5859787776 md1
+
+Filesystem               Size  Used Avail Use% Mounted on
+/dev/mapper/centos-root   50G  2.7G   48G   6% /
+devtmpfs                  63G     0   63G   0% /dev
+tmpfs                     63G     0   63G   0% /dev/shm
+tmpfs                     63G   25M   63G   1% /run
+tmpfs                     63G     0   63G   0% /sys/fs/cgroup
+/dev/mapper/centos-home  132G  121G   12G  92% /home
+/dev/sdk1                497M  253M  244M  51% /boot
+/dev/sdj                 917G  680G  192G  79% /data
+/dev/md1                 5.5T  834G  4.7T  15% /mnt

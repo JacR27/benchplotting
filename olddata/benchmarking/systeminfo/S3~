@@ -1,0 +1,90 @@
+cpu
+1x Intel(R) Xeon(R) CPU D-1540 @ 2.00GHz
+
+8 cores per processor
+
+2 threds per core
+
+e.g
+processor       : 15
+vendor_id       : GenuineIntel
+cpu family      : 6
+model           : 86
+model name      : Intel(R) Xeon(R) CPU D-1540 @ 2.00GHz
+stepping        : 2
+microcode       : 0xa
+cpu MHz         : 800.000
+cache size      : 12288 KB
+physical id     : 0
+siblings        : 16
+core id         : 7
+cpu cores       : 8
+apicid          : 15
+initial apicid  : 15
+fpu             : yes
+fpu_exception   : yes
+cpuid level     : 20
+wp              : yes
+flags           : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap
+bogomips        : 4000.17
+clflush size    : 64
+cache_alignment : 64
+address sizes   : 46 bits physical, 48 bits virtual
+power management:
+
+
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                16
+On-line CPU(s) list:   0-15
+Thread(s) per core:    2
+Core(s) per socket:    8
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 86
+Model name:            Intel(R) Xeon(R) CPU D-1540 @ 2.00GHz
+Stepping:              2
+CPU MHz:               800.000
+BogoMIPS:              4000.17
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              12288K
+NUMA node0 CPU(s):     0-15
+
+MEM
+
+MemTotal:       65705264 kB
+
+
+              total        used        free      shared  buff/cache   available
+Mem:          64165         663         406          22       63094       63034
+Swap:         32191          64       32127
+
+disk
+
+major minor  #blocks  name
+
+  8        0  976762584 sda
+  8        1     512000 sda1
+  8        2  976248832 sda2
+  8       16  976762584 sdb
+  8       17  976760832 sdb1
+253        0   52428800 dm-0
+253        1   32964608 dm-1
+253        2 1867542528 dm-2
+
+Filesystem               Size  Used Avail Use% Mounted on
+/dev/mapper/centos-root   50G  1.5G   49G   3% /
+devtmpfs                  32G     0   32G   0% /dev
+tmpfs                     32G     0   32G   0% /dev/shm
+tmpfs                     32G   25M   32G   1% /run
+tmpfs                     32G     0   32G   0% /sys/fs/cgroup
+/dev/mapper/centos-home  1.8T  834G  947G  47% /home
+/dev/sda1                497M  120M  378M  24% /boot
+
+

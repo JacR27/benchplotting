@@ -1,0 +1,56 @@
+S1: !system
+  cpu: !<CPU>
+    GHz: 2.8
+    cores: 10
+    model: Intel(R) Xeon(R) CPU E5-2680 v2
+    sockets: 2
+    threads: 40
+  disk: !<disk>
+    number: 6
+    raidLevel: 0
+    raidType: SW
+    size: 5.5
+  ip: 10.46.32.224
+  mem: 132
+S2: !system
+  cpu: !<CPU>
+    GHz: 2.5
+    cores: 12
+    model: Intel(R) Xeon(R) CPU E5-2680 v3
+    sockets: 2
+    threads: 48
+  disk: !<disk>
+    number: 6
+    raidLevel: 0
+    raidType: HW
+    size: 14
+  ip: 10.46.30.46
+  mem: 132
+S3: !system
+  cpu: !<CPU>
+    GHz: 2.0
+    cores: 8
+    model: Intel(R) Xeon(R) CPU D-1540
+    sockets: 1
+    threads: 16
+  disk: !<disk>
+    number: 1
+    raidLevel: NA
+    raidType: NA
+    size: 1.8
+  ip: 10.46.30.52
+  mem: 66
+S4: !system
+  cpu: !<CPU>
+    GHz: 3.1
+    cores: 10
+    model: Intel(R) Xeon(R) CPU E5-2687W v3
+    sockets: 2
+    threads: 40
+  disk: !<disk>
+    number: 6
+    raidLevel: 0
+    raidType: SW
+    size: 7.3
+  ip: 10.46.30.55
+  mem: 132

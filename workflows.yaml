@@ -1,0 +1,102 @@
+W1: !workflow
+  inputFormat: bcl
+  lane: 1-8
+  name: HAS
+  runType: GenerateFASTQ
+  version: 2.5.55.1311.HAS
+W10: !workflow
+  inputFormat: bcl
+  lane: '8'
+  name: Isis
+  runType: GenerateFASTQ&Resequence
+  version: 2.6.17.6.Northstar
+W11: !workflow
+  inputFormat: blc
+  lane: '4'
+  name: Isis
+  runType: Resequence
+  version: 2.5.55.16.Northstar
+W12: !workflow
+  inputFormat: blc
+  lane: '4'
+  name: Isis
+  runType: Resequence
+  version: 2.6.17.6.Northstar
+W13: !workflow
+  inputFormat: bcl
+  lane: '8'
+  name: Isis
+  runType: Resequence
+  version: 2.5.55.16.Northstar
+W14: !workflow
+  inputFormat: bcl
+  lane: '8'
+  name: Isis
+  runType: Resequence
+  version: 2.6.17.6.Northstar
+W15: !workflow
+  inputFormat: bcl
+  lane: '4'
+  name: isaac
+  runType: align
+  version: iSAACv3
+W16: !workflow
+  inputFormat: bcl
+  lane: '8'
+  name: isaac
+  runType: align
+  version: iSAACv3
+W17: !workflow
+  inputFormat: blc with Reads in samplesheet
+  lane: '4'
+  name: Isis
+  runType: Resequence
+  version: 2.6.17.6.Northstar
+W2: !workflow
+  inputFormat: FASTQ
+  lane: '4'
+  name: HAS
+  runType: Alignment
+  version: 2.5.55.1311.HAS
+W3: !workflow
+  inputFormat: bcl
+  lane: '1'
+  name: Isis
+  runType: Resequence
+  version: 2.5.55.16.Northstar
+W4: !workflow
+  inputFormat: bcl
+  lane: '1'
+  name: Isis
+  runType: Resequence
+  version: 2.6.17.5.Northstar
+W5: !workflow
+  inputFormat: bcl
+  lane: 1-4
+  name: Isis
+  runType: Tumor normal
+  version: 2.5.55.16.Northstar
+W6: !workflow
+  inputFormat: bcl
+  lane: 1-4
+  name: Isis
+  runType: Tumor normal
+  version: 2.6.17.6.Northstar
+W7: !workflow
+  inputFormat: bcl
+  lane: '4'
+  name: Isis
+  runType: GenerateFASTQ&Resequence
+  version: 2.5.55.16.Northstar
+W8: !workflow
+  inputFormat: bcl
+  lane: '4'
+  name: Isis
+  runType: GenerateFASTQ&Resequence
+  version: 2.6.17.6.Northstar
+W9: !workflow
+  inputFormat: bcl
+  lane: '8'
+  name: Isis
+  runType: GenerateFASTQ&Resequence
+  version: 2.5.55.16.Northstar

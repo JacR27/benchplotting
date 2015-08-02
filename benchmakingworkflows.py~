@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Jun 19 15:55:03 2015
+
+@author: jrayner
+"""
+
+import subprocess as subp
+from datetime import datetime
+from time import mktime
+
+def main():
+    plottableCollectlFile= open('./collectlout.dat','w') # open newfile for output
+    purportedlyPlotableCollectlFile = open('./collectl.dat','r') # open collectl output
+    
+    data = [] # inicalise array
+    for line in purportedlyPlotableCollectlFile: 
+        if line[0]=="#":   #remove header
+            titleline = line[6:] #save heading row excluding date
+        else:
+            data.append(line) # write data to array
+    print(data)
+   # data = [line.strip() for line in purportedlyPlotableCollectlFile.splitlines() if not line.startswith('#')]
+    
+    plottableCollectlFile.write(titleline) # write header row to outputfile
+    starttime = datetimestr2seconds(data[0][0:17]) #get first time string and convert to seconds
+    
+    
+    for i in data:
+        time = datetimestr2seconds(i[0:17])-starttime # convert timestamp to relitive time
+        plottableCollectlFile.write(str(time) + i[17:]) #write date to outputfile
+        
+    purportedlyPlotableCollectlFile.close()
+    plottableCollectlFile.close()
+    
+def datetimestr2seconds(timestring):
+    dt = datetime.strptime(timestring,"%Y%m%d %H:%M:%S") # convert time string into datatime object
+    dt = int(mktime(dt.timetuple())) # convert datetime object to seconds
+    return dt
+main()

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+workflow=$1
+hostname=$2
+
+
+grep "Elaspsed time" runout | python ~/scripts/getsubprocesstimesISIS.py > processtics
+
+python  ~/scripts/benchmakingworkflows.py
+
+export GNUTERM=dumb
+~/scripts/collectl.pg
