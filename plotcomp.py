@@ -11,9 +11,9 @@ from matplotlib import cm
 import benchmarkingYAML as ya
 def compSystemcomponet():
     
-    workflow = "W12"
+    workflow = "W18"
     systems = ["S1","S2","S4"]
-    average = 60
+    average = 20
     collectlData = [["[CPU]Wait%","[CPU]Nice%","[CPU]User%","[CPU]Sys%"],
                     ["[DSK]WriteKBTot","[DSK]ReadKBTot"],
                     ["[MEM]Cached","[MEM]Commit","[MEM]Tot","[MEM]Anon"]]
@@ -77,7 +77,7 @@ def Plot1(average,workflow,subprocessTimeTaken,systems,data,xlimit,collectlData,
             ax.plot(A[:,0]/60,B,label=cD)
         for n,name in enumerate(subprocessNames[i]):
             ymin, ymax= ax.get_ylim()
-            ax.annotate(name, xy=(subprocessCompleteTime[i][n], 1), xytext=(subprocessCompleteTime[i][n],ymax),rotation=30,
+            ax.annotate(name, xy=(subprocessCompleteTime[i][n], 1), xytext=(subprocessCompleteTime[i][n],ymax/(1)),rotation=30,
             arrowprops=dict(visible=True, fill=False, width=0.0001,linestyle='dashed'))
         ax.set_title("{:s}, {:s}".format(system,ya.workflows[workflow].version + ", " + ya.workflows[workflow].runType,))
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
